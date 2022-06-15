@@ -17023,7 +17023,6 @@ textarea.form-control-lg {
 }
 
 body {
-  font-family: Ubuntu;
   background-image: url("/img/pattern.png"), linear-gradient(45deg, rgb(162, 103, 40) 0%, rgb(252, 181, 64) 100%);
   background-repeat: repeat, no-repeat;
   background-size: 100px, 100%;
