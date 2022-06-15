@@ -1,0 +1,92 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+@import '~bootstrap-icons';
+
+
+body {
+    font-family: Ubuntu;
+    background-image: url('/img/pattern.png'), linear-gradient(45deg, rgba(162,103,40,1) 0%, rgba(252,181,64,1) 100%);
+    background-repeat: repeat, no-repeat;
+    background-size: 100px, 100%;
+    background-attachment: fixed;
+    background-position: 0,0;
+    //display: grid;
+    //align-items: center;
+    //justify-content: center;
+    //height: 100vh;
+}
+
+.pane {
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+    border-radius: 10px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+    overflow: hidden;
+    padding: 40px;
+    width: 80%;
+}
+
+.pane:before {
+    content: "";
+    position: absolute;
+    background-image: url('/img/pattern.png'), linear-gradient(45deg, rgba(162,103,40,1) 0%, rgba(252,181,64,1) 100%);
+    background-repeat: repeat, no-repeat;
+    background-size: 100px, 100%;
+    background-attachment: fixed;
+    background-position: 0,0;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: inset 0 0 2000px rgba(255, 255, 255, .3);
+    filter: blur(7px);
+    margin: -20px;
+}
+
+.pane .pane-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.pane .pane-container img {
+    height: min(40vh, 40vw);
+}
+
+.pane .pane-container h1 {
+    font-size: min(7vh, 7vw);
+}
+
+.pane .pane-container a {
+    border-radius: 10px;
+    font-size: min(5vh, 5vw);
+    background-color: rgba(0,0,0,0.4);
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+    transition: 200ms;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.pane .pane-container a:hover {
+    background-color: rgba(0,0,0,0.7);
+}
+
+.pane .pane-container a img {
+    height: 1em;
+}
