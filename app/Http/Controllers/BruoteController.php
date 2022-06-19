@@ -11,7 +11,7 @@ use Illuminate\Support\Facades\Redirect;
 class BruoteController extends Controller
 {
     public function index() {
-        $bruotes = Bruote::paginate(20);
+        $bruotes = Bruote::latest()->paginate(10);
         return view('bruotes.index', ['bruotes' => $bruotes]);
     }
 
