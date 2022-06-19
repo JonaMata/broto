@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\Storage;
 class BreadController extends Controller
 {
     public function index() {
-        $breads = Bread::orderBy('rating', 'ASC')->paginate(20);
+        $breads = Bread::orderBy('rating', 'ASC')->paginate(10);
         return view('breads.index', ['breads' => $breads]);
     }
 

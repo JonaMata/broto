@@ -83,7 +83,7 @@
         </div>
     </nav>
 
-    <main class="py-4">
+    <main class="py-4 d-flex justify-content-center">
         <div class="pane">
             <div class="container">
                 @yield('content')

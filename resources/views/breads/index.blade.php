@@ -58,4 +58,8 @@
     </table>
     </div>
 
+    <div class="d-flex justify-content-center">
+        {{ $breads->links() }}
+    </div>
+
 @endsection

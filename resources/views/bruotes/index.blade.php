@@ -87,8 +87,12 @@
                     </div>
 
                 @endforeach
+
             </div>
         </div>
+    </div>
+    <div class="d-flex justify-content-center">
+        {{ $bruotes->links() }}
     </div>
 
 @endsection
