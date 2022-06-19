@@ -80,7 +80,7 @@
                                     {{ $bruote->bruote }}
                                 </blockquote>
                                 <figcaption class="blockquote-footer">
-                                    {{ $bruote->placer->name }}
+                                    {{ $bruote->author->name }}
                                 </figcaption>
                             </div>
                         </div>
