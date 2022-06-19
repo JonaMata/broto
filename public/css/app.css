@@ -17039,10 +17039,15 @@ body {
   transform: translate(-50%, -50%);
   z-index: 1;
   overflow: hidden;
-  padding: 40px;
+  padding: 40px 20px;
   width: 80%;
 }
 
+@media screen and (max-width: 500px) {
+  .pane {
+    width: 100%;
+  }
+}
 .pane:before {
   content: "";
   position: absolute;

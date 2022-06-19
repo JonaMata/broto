@@ -26,3 +26,14 @@ Route::prefix('/bruotes')->name('bruotes::')->group(function () {
     Route::post('store', [\App\Http\Controllers\BruoteController::class, 'store'])->middleware('auth')->name('store');
     Route::get('delete/{id}', [\App\Http\Controllers\BruoteController::class, 'delete'])->middleware('auth')->name('delete');
 });
+
+Route::prefix('breads')->name('breads::')->group(function() {
+    Route::get('', [\App\Http\Controllers\BreadController::class, 'index'])->name('index');
+    Route::get('photo/{bread}', [\App\Http\Controllers\BreadController::class, 'photo'])->name('photo');
+    Route::middleware('auth')->group(function() {
+        Route::get('add', [\App\Http\Controllers\BreadController::class, 'create'])->name('create');
+        Route::get('edit/{bread}', [\App\Http\Controllers\BreadController::class, 'edit'])->name('edit');
+        Route::post('store/{bread?}', [\App\Http\Controllers\BreadController::class, 'store'])->name('store');
+        Route::get('delete/{bread}', [\App\Http\Controllers\BreadController::class, 'delete'])->name('delete');
+    });
+});

@@ -38,6 +38,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('bruotes::index') }}">Bruote Corner</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('breads::index') }}">Bread Ratings</a>
+                    </li>
                 </ul>
 
                 <!-- Right Side Of Navbar -->
