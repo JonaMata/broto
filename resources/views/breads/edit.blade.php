@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('title')
-    Bruotes
+    {{ isset($bread) ? 'Edit Bread' : 'Add Bread' }}
 @endsection
 
 @section('content')

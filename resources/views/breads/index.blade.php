@@ -1,12 +1,12 @@
 @extends('layouts.app')
 
 @section('title')
-    Breads Ratings
+    History of Breads
 @endsection
 
 @section('content')
     <div class="d-flex justify-content-between">
-        <h1>Bread Ratings</h1>
+        <h1>History of Breads</h1>
         @auth('web')
             <div class="float-end">
             <a class="btn btn-primary float-end" href="{{ route('breads::create') }}"><i class="bi bi-plus"></i>Add

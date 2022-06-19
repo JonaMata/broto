@@ -39,7 +39,7 @@
                         <a class="nav-link" href="{{ route('bruotes::index') }}">Bruote Corner</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('breads::index') }}">Bread Ratings</a>
+                        <a class="nav-link" href="{{ route('breads::index') }}">History of Breads</a>
                     </li>
                 </ul>
 
