@@ -15,6 +15,10 @@ class Bread extends Model
 
     protected $dates = ['bake_date'];
 
+    protected $casts = [
+        'bake_date' => 'date:d-m-Y',
+    ];
+
     public function photo() {
         if ($this->photo_path == null) return null;
         return route('breads::photo', ['bread' => $this->id]);
